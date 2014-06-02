@@ -16,12 +16,12 @@ describe 'fake array' do
 
     it "should let you iterate just like a normal array" do
       fake_array = FakeArray.new(8,"ports", 1000)
+      $stdout.should_receive(:puts).with(8)
+      $stdout.should_receive(:puts).with("ports")
+      $stdout.should_receive(:puts).with(1000)
       fake_array.each do |item|
         puts item
       end
-      expect(Kernel).to receive(:puts) {8}
-      expect(Kernel).to receive(:puts) {"ports"}
-      expect(Kernel).to receive(:puts) {1000}
     end
 
     it "should return the first element" do
