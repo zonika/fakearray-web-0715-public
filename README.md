@@ -1,62 +1,9 @@
 ---
-  tags: arrays, iteration, hashes, conditionals, nested_structures
+  tags: arrays, iteration, object orientation
   languages: ruby
 ---
 
-# Nested Data Structures Practice
-
-### Skills: iteration, arrays, hashes, conditionals, nested data structures
+# Fake Arrays
 
 ## Instructions
-
-You are given a list of programming languages along with attributes of those programming languages
-
-```ruby
-languages = {
-  :oo => {
-    :ruby => {
-      :type => "interpreted"
-    },
-    :javascript => {
-      :type => "interpreted"
-    },
-    :python => {
-      :type => "interpreted"
-    },
-    :java => {
-      :type => "compiled"
-    }
-  },
-  :functional => {
-    :clojure => {
-      :type => "compiled"
-    },
-    :erlang => {
-      :type => "compiled"
-    },
-    :scala => {
-      :type => "compiled"
-    },
-    :javascript => {
-      :type => "interpreted"
-    }
- 
-  }
-}
-```
-
-1. Iterate over the hash and insert the language as keys in a new hash along with an array of styles that language is a part of.  It should match the following format.
-
-```ruby
-{
-  :ruby => {
-    :style => [:oo],
-    :type => "interpreted"
-  },
-  :python => {
-    :style => [:oo],
-    :type => "interpreted"
-  }
-  etc etc
-}
-```
+When you use certain gems you might notice that their main methods return "array like" objects.  What is an array like object?  Arrays respond to a set list of methods and behave in a certain fashion.  Because most Rubyists are so used to working with arrays, gem creators will often return objects that have the same methods defined on them as a regular array.  They will usually allow you to iterate over them (each) as well as indexing in using the [] method.  Create an object of your own that behaves in this manner.
