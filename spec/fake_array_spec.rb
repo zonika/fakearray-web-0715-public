@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe 'fake array' do
 
   describe '#reformat_languages' do
