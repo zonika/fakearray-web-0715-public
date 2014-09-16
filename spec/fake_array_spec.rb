@@ -14,9 +14,9 @@ describe 'fake array' do
 
     it "should let you iterate just like a normal array" do
       fake_array = FakeArray.new(8,"ports", 1000)
-      $stdout.should_receive(:puts).with(8)
-      $stdout.should_receive(:puts).with("ports")
-      $stdout.should_receive(:puts).with(1000)
+      expect($stdout).to receive(:puts).with(8)
+      expect($stdout).to receive(:puts).with("ports")
+      expect($stdout).to receive(:puts).with(1000)
       fake_array.each do |item|
         puts item
       end
