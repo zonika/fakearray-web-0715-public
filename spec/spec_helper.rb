@@ -8,5 +8,5 @@ require_relative '../lib/fake_array'
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # config here
-  config.order = 'random'
+  config.order = 'default'
 end
