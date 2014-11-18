@@ -1,5 +1,5 @@
 ---
-tags: arrays, iteration, object orientation
+tags: arrays, iteration, object orientation, bonus
 languages: ruby
 ---
 
