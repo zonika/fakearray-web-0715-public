@@ -1,7 +1,4 @@
----
-tags: arrays, iteration, object orientation, bonus
-languages: ruby
----
+
 
 # Fake Arrays
 
